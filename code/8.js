@@ -4,8 +4,6 @@ const binSearch = (arr = [], target) => {
 
   let mid = Math.floor((left + right) / 2);
 
-  debugger;
-
   while (left < mid) {
     if (arr[mid] === target) return mid;
 
