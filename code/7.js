@@ -15,5 +15,3 @@ const primeNumbers = (n) => {
 
   return arr.filter((v) => v);
 };
-
-console.log(primeNumbers(11));
