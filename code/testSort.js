@@ -6,9 +6,10 @@ function testSort(sortFunction, n = 100) {
 
     const testCase = [...a];
 
-    if (!sortFunction(a).toString() === a.sort((a, b) => a - b).toString()) {
-      const e = new Error('Error! Test case: ' + a.join(' '));
+    if (sortFunction(a).toString() !== a.sort((a, b) => a - b).toString()) {
+      const e = new Error('Test case: ' + testCase.join(' '));
       console.log(e);
+      return e;
     }
   }
 
