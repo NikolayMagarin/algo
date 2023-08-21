@@ -1,6 +1,6 @@
 function reversed(list) {
   const a = [list];
-  debugger;
+
   let cur = list;
   while (cur.next) {
     a.push(cur.next);
@@ -20,7 +20,7 @@ function reversed(list) {
 }
 
 /*
-const testlist = {
+const list = {
   val: 1,
   next: {
     val: 5,
